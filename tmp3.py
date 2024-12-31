@@ -35,7 +35,7 @@ def next_graph():
         a.set_xlim(xlim)
         a.set_ylim(ylim)
         plt.axis('off')
-        canvas.draw()
+        canvas.show()
 
 b = Tk.Button(root, text="next",command=next_graph)
 b.pack()

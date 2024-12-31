@@ -144,7 +144,7 @@ class TabFour:
         canvas = FigureCanvasTkAgg(f, master=rightside_tab)
         self.canvas = canvas
         canvas.get_tk_widget().pack(side=Tk.TOP, fill=Tk.BOTH, expand=1)
-        canvas.draw()
+        canvas.show()
 
 
         self.main = main
@@ -183,7 +183,7 @@ class TabFour:
         self.a.set_xlim(self.xlim)
         self.a.set_ylim(self.ylim)
         plt.axis('off')
-        self.canvas.draw()
+        self.canvas.show()
 
 
 
@@ -261,7 +261,7 @@ class TabFour:
             self.a.set_xlim(self.xlim)
             self.a.set_ylim(self.ylim)
             plt.axis('off')
-            self.canvas.draw()
+            self.canvas.show()
 
             self.rounds_var.set("Rounds: " + str(self.graph.rounds))
             tmp = 0
